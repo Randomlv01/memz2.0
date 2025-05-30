@@ -20,11 +20,11 @@ jobs:
         version: 12.2.0
         platform: x86_64
 
-    - name: Build prank.exe
+    - name: Build memz.exe
       run: gcc memz.c -o memz.exe -lgdi32 -mwindows
 
     - name: Upload memz.exe
       uses: actions/upload-artifact@v4
       with:
         name: memz-exe
-        path: prank.exe
+        path: memz.exe
